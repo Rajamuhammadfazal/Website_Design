@@ -1,0 +1,76 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#e6f7d6;
+}
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+}
+.Apply_form{
+  background-color: white;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px rgba(1, 1, 1, 0.1);
+}
+.web{
+  font-size: 20px;
+}
+.form_container{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+.form_control{
+  display: flex;
+  flex-direction: column;
+}
+label{
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+select,textarea,input{
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 6px 10px;
+}
+input:focus{
+  outline-color: red;
+}
+.btn_container{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 20px;
+}
+button{
+  color: white;
+  background-color: red;
+  padding: 5px 10px;
+  border: transparent solid 2px;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+button:hover{
+  background: rgba(40, 36, 39, 0.41);
+  border: 2px solid red;
+  transition: 0.3s ease-out;
+}
+.address_control{
+  grid-column: 1 / span 2;
+}
+.address_control textarea{
+  width: 100%;
+}
+@media (max-width: 460px) {
+  .address_control{
+    grid-column: 1 / span 1;
+  }
+};
